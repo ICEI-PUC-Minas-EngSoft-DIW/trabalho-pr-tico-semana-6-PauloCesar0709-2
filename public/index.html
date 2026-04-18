@@ -5,8 +5,251 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-    
+    <!-- Cabeçalho do site -->
+    <header>
+
+        <!-- Título do site -->
+        <h1 id="titulo-site">Destaka BH</h1>
+
+        <!-- Lista com elementos do menu -->
+        <ul id="menu">
+            <li><a href="#home"><strong>Home</strong></a></li>
+            <li><a href="#destaque"><strong>Destaques</strong></a></li>
+            <li><a href="#eventos"><strong>Eventos</strong></a></li>
+        </ul>
+
+    </header>
+
+    <!-- Conteúdo do site -->
+    <main>
+        <section id="home">
+
+            <div id="titulo-banner">
+                <h3><strong>BH É NOIS!</strong></h3>
+            </div>
+            <div id="texto-banner">
+                <p><strong>Venha conhecer os melhores rolês da capital dos bares</strong></p>
+            </div>
+
+
+        </section>
+
+        <!-- Seção de destaques -->
+        <section id="destaque">
+
+            <div id="container-titulo-destaque">
+                <h3><strong>CONFIRA ALGUNS LUGARES DE DESTAQUE</strong></h3>
+            </div>
+
+            <div id="container-destaques">
+                <!-- Cards com os lugares de destaque -->
+                <article class="destaques">
+
+                    <div class="imagem-destaque">
+                        <img src="img/lagoa-da-pampulha.jpg" alt="Lagoa da Pampulha">
+                    </div>
+
+                    <div class="descricao">
+                        <h3 class="titulo-descricao"><strong>LAGOA DA PAMPULHA</strong></h3>
+                        <p>É o lugar ideal para quem busca beleza arquitetônica e um respiro de tranquilidade.
+                            Venha se encantar com o encontro entre o concreto poético e a natureza!</p>
+                    </div>
+
+                    <div class="botao-localizacao">
+                        <a href="https://www.google.com/maps/place/Lagoa+da+Pampulha,+Belo+Horizonte+-+MG/@-19.8506075,-44.0069832,14z/data=!3m1!4b1!4m6!3m5!1s0xa6904d7368fef5:0xa114f608c201cf71!8m2!3d-19.8514848!4d-43.9819646!16s%2Fg%2F11h0bq34z3?entry=ttu&g_ep=EgoyMDI2MDMyOS4wIKXMDSoASAFQAw%3D%3D"
+                            target="_blank"><button>VER LOCALIZAÇÃO</button></a>
+                    </div>
+
+                </article>
+
+                <article class="destaques">
+
+                    <div class="imagem-destaque">
+                        <img src="img/mineirao.jpg" alt="Mineirao" width="">
+                    </div>
+
+                    <div class="descricao">
+                        <h3 class="titulo-descricao"><strong>MINEIRÃO</strong></h3>
+                        <p>Sentir a energia de um dos maiores palcos do futebol mundial é uma
+                            experiência eletrizante. Que tal vir conhecer os bastidores da bola e
+                            depois curtir o clima vibrante da esplanada?</p>
+                    </div>
+
+                    <div class="botao-localizacao">
+                        <a href="https://www.google.com/maps/place/Mineirão/@-19.8658619,-43.9737064,17z/data=!3m1!4b1!4m6!3m5!1s0xa690f71348ff6d:0x35b9453242d27588!8m2!3d-19.865867!4d-43.9711315!16zL20vMDYyMV96?entry=ttu&g_ep=EgoyMDI2MDMzMS4wIKXMDSoASAFQAw%3D%3D"
+                            target="_blank"><button>VER LOCALIZAÇÃO</button></a>
+                    </div>
+
+                </article>
+
+                <article class="destaques">
+
+                    <div class="imagem-destaque">
+                        <img src="img/praca-do-papa.jpg" alt="Praça do Papa">
+                    </div>
+
+                    <div class="descricao">
+                        <h3 class="titulo-descricao"><strong>PRAÇA DO PAPA</strong></h3>
+                        <p>Se você quer ver a cidade do alto e entender por que
+                            ela recebeu esse nome, a Praça do Papa é o destino certo. Traga sua canga,
+                            um lanche e venha desfrutar de um dos finais de tarde mais mágicos de Minas Gerais!</p>
+                    </div>
+
+                    <div class="botao-localizacao">
+                        <a href="https://www.google.com/maps/place/Praça+Governador+Israel+Pinheiro+(Praça+do+Papa)/@-19.9570172,-43.9173884,17z/data=!3m1!4b1!4m6!3m5!1s0xa698527beccc11:0xacdb6ef0826ed46!8m2!3d-19.9570223!4d-43.9148135!16s%2Fg%2F11g6rkd2v6?entry=ttu&g_ep=EgoyMDI2MDMyOS4wIKXMDSoASAFQAw%3D%3D"
+                            target="_blank"><button>VER LOCALIZAÇÃO</button></a>
+                    </div>
+
+                </article>
+            </div>
+
+        </section>
+
+        <!-- Seção de eventos -->
+        <section id="eventos">
+
+            <div id="container-eventos">
+                <!-- Cards com os eventos -->
+
+                <div id="container-titulo">
+                    <h3><strong>CONFIRA ALGUNS EVENTOS</strong></h3>
+                </div>
+
+                <div id="container-cards-eventos">
+                    <article class="evento">
+
+                        <div class="imagem-evento">
+                            <img src="img/evento1.webp" alt="Evento 1">
+                        </div>
+
+                        <div class="titulo-evento">
+                            <h3><strong>ALMIR SATER E GABRIEL SATER - PAI E FILHO</strong></h3>
+                        </div>
+
+                        <div class="local-evento">
+                            <p><strong>Local:</strong> Befly Hall - Av. Nossa Sra. do Carmo,230, Belo Horizonte - Minas
+                                Gerais</p>
+                        </div>
+
+                        <div class="dia-e-horario-evento">
+                            <p><strong>Data:</strong> 15 de Agosto de 2026</p>
+                            <p><strong>Horário:</strong> 21h</p>
+                        </div>
+
+                        <div class="botao">
+                            <a href="https://bileto.sympla.com.br/event/116311/d/365843" target="_blank">
+                                <button><strong>ACESSAR NO SITE</strong></button>
+                            </a>
+                        </div>
+
+                    </article>
+
+                    <article class="evento">
+
+                        <div class="imagem-evento">
+                            <img src="img/evento2.webp" alt="Evento 2">
+                        </div>
+
+                        <div class="titulo-evento">
+                            <h3><strong>BACO EXU DO BLUES</strong></h3>
+                        </div>
+
+                        <div class="local-evento">
+                            <p><strong>Local:</strong> Befly Hall - Av. Nossa Sra. do Carmo,230, Belo Horizonte - Minas
+                                Gerais</p>
+                        </div>
+
+                        <div class="dia-e-horario-evento">
+                            <p><strong>Data:</strong> 25 de Julho de 2026</p>
+                            <p><strong>Horário:</strong> 22h</p>
+                        </div>
+
+                        <div class="botao">
+                            <a href="https://bileto.sympla.com.br/event/116908/d/368141" target="_blank">
+                                <button><strong>ACESSAR NO SITE</strong></button>
+                            </a>
+                        </div>
+
+                    </article>
+
+                    <article class="evento">
+
+                        <div class="imagem-evento">
+                            <img src="img/evento3.webp" alt="Evento 3">
+                        </div>
+
+                        <div class="titulo-evento">
+                            <h3><strong>CHICO CÉSAR E ZECA BALEIRO – ARREPIO DA LEI</strong></h3>
+                        </div>
+
+                        <div class="local-evento">
+                            <p><strong>Local:</strong> Grande Teatro Cemig Palácio das Artes - Av. Afonso Pena,1537,
+                                Belo Horizonte - Minas Gerais</p>
+                        </div>
+
+                        <div class="dia-e-horario-evento">
+                            <p><strong>Data:</strong> 30 de Maio de 2026</p>
+                            <p><strong>Horário:</strong> 21h</p>
+                        </div>
+
+                        <div class="botao">
+                            <a href="https://bileto.sympla.com.br/event/116176/d/365253" target="_blank">
+                                <button><strong>ACESSAR NO SITE</strong></button>
+                            </a>
+                        </div>
+
+                    </article>
+                </div>
+
+            </div>
+
+            <!-- Caixa do forms -->
+            <div id="container-forms">
+
+                <!-- Forms para cadastrar eventos -->
+                <form action="" method="post" id="forms">
+                    <h3><strong>Cadastre seu evento</strong></h3>
+                    <input type="text" name="nome-evento" placeholder="Nome do evento" required>
+                    <input type="text" name="local-evento" placeholder="Local do evento" required>
+                    <input type="date" name="data-evento" required>
+                    <input type="time" name="horario-evento" required>
+                    <input type="url" name="link-evento" placeholder="Link para compra de ingressos" required>
+                    <label for="imagem">Escolha uma imagem:</label>
+                    <input type="file" id="imagem" name="imagem-evento" accept="image/*"
+                        placeholder="Adicione uma imagem">
+                    <button type="submit"><strong>ENVIAR</strong></button>
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Rodapé do site -->
+    <footer>
+
+        <div id="copyright">
+            <p>&copy; 2026 Destaka BH. Todos os direitos reservados.</p>
+        </div>
+
+        <div id="contatos">
+            <!-- Caixa com informações de contato -->
+            <div id="contato">
+                <h3 id="titulo-contato">Contato</h3>
+                <p>paulocsm2006@gmail.com</p>
+                <p>+55 (31) 99704-6545</p>
+            </div>
+
+            <!-- Caixa com link para redes sociais -->
+            <div id="redes-sociais">
+                <h3 id="titulo-redes-sociais">Redes Sociais</h3>
+            </div>
+        </div>
+
+    </footer>
 </body>
 </html>

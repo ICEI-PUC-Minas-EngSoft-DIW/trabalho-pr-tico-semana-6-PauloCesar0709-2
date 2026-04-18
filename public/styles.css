@@ -1,0 +1,443 @@
+html {
+    height: 100%; /* Define a altura do elemento html como 100% da altura da janela de visualização */
+    max-width: 100%; /* Define a largura máxima do elemento html como 100% da largura da janela de visualização */
+}
+
+/* Estilo para o corpo do site */
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /* fonte do corpo do site */
+    margin: 0; /* remove a margem padrão do navegador */
+}
+
+/* ---------------------------------------------------------------- */
+/* Estilo geral do cabeçalho do site */
+
+header {
+    display: flex; /* Exibe os elementos em linha */
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribui os elementos cada um em uma ponta */
+    align-items: center; /* Alinha os elementos verticalmente ao centro */;
+}
+
+/* Menu de navegação do site */
+#menu {
+    display: flex; /* Exibe os itens em linha */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha, se necessário */
+    gap: 40px; /* Adiciona um espaço entre os itens */
+    list-style: none; /* Remove os marcadores de lista padrão */
+    margin-right: 60px; /* Adiciona uma margem à direita */
+    font-family: Jomhuria; /* Define a fonte */
+    font-size: 26px; /* Tamanho da fonte */
+}
+
+#menu :hover {
+    transform: scale(1.1); /* Aumenta o tamanho do item ao passar o mouse */
+    transition: 0.3s; /* Adiciona uma transição suave */
+}
+
+#menu a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: black; /* Cor dos links */
+}
+
+/* Estilo para o título do site */
+#titulo-site {
+    font-family: Jomhuria; /* Fonte */
+    color: black; /* Cor da fonte */
+    margin-left: 40px; /* Adiciona uma margem à esquerda */
+    font-size: 40px; /* Tamanho da fonte */
+}
+
+/* ---------------------------------------------------------------- */
+/* Estilo para a seção de home do site */
+
+#home {
+    background-image: url(img/banner.png); /* Imagem de fundo */
+    background-size: 100% 100%; /* Ajusta a imagem para cobrir toda a área do elemento */
+    height: auto; /* Altura da seção */
+}
+
+/* Estilo para o título e texto do banner */
+
+#titulo-banner {
+    display: flex; /* Aciona a Flexbox */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    text-align: center; /* Centraliza o texto */
+    padding-top: 134px; /* Adiciona um espaçamento no topo */
+}
+
+#titulo-banner h3 {
+    color: white; /* Cor do título */
+    font-family: montserrat; /* Fonte do título */
+    font-size: 40px; /* Tamanho da fonte */
+    letter-spacing: 10px; /* Espaçamento entre as letras */
+}
+
+#texto-banner {
+    display: flex; /* Aciona a Flexbox */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    text-align: center; /* Centraliza o texto */
+    padding-top: 250px; /* Adiciona um espaçamento no topo */
+}
+
+#texto-banner p {
+    color: #F5F5F5; /* Cor do texto */
+    font-family: montserrat; /* Fonte do texto */
+    font-size: 20px; /* Tamanho da fonte */
+}
+
+/* ---------------------------------------------------------------- */
+/* Estilo para a seção de destaques do site */
+
+/* Container do título da seção */
+#container-titulo-destaque {
+    display: flex; /* Exibe os elementos em linha */
+    flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha, se necessário */
+    justify-content: center; /* Distribui os elementos no centro */
+    margin-top: 50px; /* Adiciona uma margem no topo */
+    font-family: jomhuria; /* Define a fonte */
+    font-size: 26px; /* Tamanho da fonte */
+}
+
+/* Container dos destaques */
+#container-destaques {
+    display: flex; /* Exibe os elementos em linha */
+    flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha, se necessário */
+    justify-content: center; /* Distribui os elementos no centro */
+    padding-bottom: 50px; /* Adiciona um espaçamento no fundo */
+    margin-top: 10px; /* Adiciona uma margem no topo */
+    border-bottom: #F5F5F5 solid 2px; /* Adiciona uma borda na parte inferior */
+}
+
+#container-destaques :hover {
+    transform: scale(1.1); /* Aumenta o tamanho do item ao passar o mouse */
+    transition: 0.3s; /* Adiciona uma transição suave */
+}
+
+/* Cards dos destaques */
+.destaques {
+    display: flex; /* Aciona a Flexbox */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    margin: 20px 30px; /* Adiciona uma margem ao redor (Top, bottom | left, right) */
+    border: #F5F5F5 solid 2px; /* Adiciona uma borda */
+    width: 320px; /* Largura do elemento */
+}
+
+/* Caixa da imagem de cada destaque */
+.imagem-destaque {
+    margin: 20px 10px; /* Adiciona uma margem ao redor (Top, bottom | left, right) */
+    border-radius: 30px; /* Adiciona bordas arredondadas */
+    width: 300px; /* Largura do elemento */
+    height: 200px; /* Altura do elemento */
+    overflow: hidden; /* Esconde qualquer parte da imagem que ultrapasse os limites do elemento */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+}
+
+/* Imagem de cada destaque */
+.imagem-destaque img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do elemento pai */
+    height: 200px; /* Define a altura da imagem */
+}
+
+/* Título da descrição de cada destaque */
+.titulo-descricao {
+    font-size: 20px; /* Tamanho da fonte */
+    font-family: Jomhuria; /* Fonte */
+}
+
+/* Descrição de cada destaque */
+.descricao {
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    text-align: center; /* Centraliza o texto */
+    width: 250px; /* Largura do elemento */
+    margin-left: 32px; /* Adiciona uma margem à esquerda */
+}
+
+/* Caixa do botão de localização dos destaques */
+.botao-localizacao {
+    display: flex; /* Exibe o elemento em linha */
+    justify-content: center; /* Distribui o botão no centro */
+    align-items: flex-end; /* Alinha o botão na parte inferior do elemento */
+    height: 60px; /* Altura do elemento */
+    margin-bottom: 20px; /* Adiciona uma margem no fundo */
+}
+
+/* Estilo do botão de localização dos destaques */
+.botao-localizacao button {
+    padding: 10px 20px; /* Adiciona um preenchimento ao redor do texto (Top, bottom | left, right) */
+    background-color: #090381; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 20px; /* Adiciona bordas arredondadas */
+    cursor: pointer; /* Altera o cursor para indicar que o elemento é clicável */
+}
+
+/* ---------------------------------------------------------------- */
+/* Estilo para a seção de eventos do site */
+
+#eventos {
+    display: flex; /* Exibe os elementos em linha */
+    flex-wrap: wrap;
+    margin-top: 60px;; /* Adiciona uma margem no topo */
+}
+
+/* Container dos eventos */
+#container-eventos {
+    display: flex; /* Exibe os elementos em linha */
+    flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha, se necessário */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    margin-right: 40px; /* Adiciona uma margem à direita */
+    margin-left: 60px; /* Adiciona uma margem à esquerda */
+}
+
+/* Título da seção de eventos */
+#container-titulo {
+    display: flex; /* Exibe o título em linha */
+    flex-wrap: wrap; /* Permite que o título quebre para a próxima linha, se necessário */
+    justify-content: center; /* Distribui o título no centro */
+    margin-bottom: 20px; /* Adiciona uma margem no fundo */
+    font-family: jomhuria; /* Define a fonte */
+    font-size: 26px; /* Tamanho da fonte */
+}
+
+/* Container dos cards de eventos */
+#container-cards-eventos {
+    display: flex; /* Exibe os cards em linha */
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha, se necessário */
+    justify-content: center; /* Distribui os cards no centro */
+    gap: 10px; /* Adiciona um espaço entre os cards */
+}
+
+#container-cards-eventos :hover {
+    transform: scale(1.04); /* Aumenta o tamanho do card ao passar o mouse */
+    transition: 0.3s; /* Adiciona uma transição suave */
+}
+
+/* Cards de eventos */
+.evento {
+    margin: 20px 4px; /* Adiciona uma margem ao redor (Top, bottom | left, right) */
+    padding: 10px 10px; /* Adiciona um preenchimento ao redor do conteúdo (Top, bottom | left, right) */
+    display: flex; /* Aciona a Flexbox */
+    flex-direction: column; /* Organiza os elementos do evento em coluna */
+    justify-content: center; /* Distribui os elementos do evento no centro */
+    text-align: center; /* Centraliza o texto */
+    border: #F5F5F5 solid 2px; /* Adiciona uma borda */
+    border-radius: 30px; /* Adiciona bordas arredondadas */
+    width: 250px; /* Largura do elemento */
+    height: 500px;
+}
+
+/* Caixa da imagem de cada evento */
+.imagem-evento {
+    border-radius: 30px; /* Adiciona bordas arredondadas */
+    width: 250px; /* Largura do elemento */
+    height: 150px; /* Altura do elemento */
+    overflow: hidden; /* Esconde qualquer parte da imagem que ultrapasse os limites do elemento */
+}
+
+/* Imagem de cada evento */
+.imagem-evento img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do elemento pai */
+    height: 150px;
+}
+
+/* Botão de cada evento */
+.evento button {
+    margin-top: 20px; /* Adiciona uma margem no topo */
+    padding: 10px 20px; /* Adiciona um preenchimento ao redor do texto (Top, bottom | left, right) */
+    background-color: #090381; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 20px; /* Adiciona bordas arredondadas */
+    cursor: pointer; /* Altera o cursor para indicar que o elemento é clicável */
+}
+
+/* ---------------------------------------------------------------- */
+/* Estilo para o formulário do site */
+
+/* Container do formulário */
+#container-forms {
+    margin: 180px 20px; /* Adiciona uma margem ao redor (Top, bottom | left, right) */
+    display: flex; /* Exibe o elemento em linha */
+    flex-wrap: wrap; /* Permite que o elemento quebre para a próxima linha, se necessário */
+    justify-content: center; /* Distribui o elemento no centro */
+    border: #F5F5F5 solid 2px; /* Adiciona uma borda */
+    border-radius: 30px; /* Adiciona bordas arredondadas */
+    background-color: white; /* Cor de fundo do elemento */
+    width: 450px; /* Largura do elemento */
+    height: 450px; /* Altura do elemento */
+}
+
+/* Formulário */
+#forms {
+    display: flex; /* Aciona a Flexbox */
+    flex-direction: column; /* Organiza os elementos do forms em coluna */
+    justify-content: center; /* Distribui os elementos do forms no centro */
+    align-items: center; /* Alinha os elementos do forms ao centro horizontalmente */
+}
+
+/* Título do formulário */
+#forms h3 {
+    font-family: Jomhuria; /* Define a fonte */
+    color: black; /* Cor do título */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Campos de entrada do formulário */
+#forms input {
+    margin: 8px 0px; /* Adiciona uma margem ao redor (Top, bottom | left, right) */
+    border: #F5F5F5 solid 2px; /* Adiciona uma borda */
+    border-radius: 20px; /* Adiciona bordas arredondadas */
+}
+
+/* Rótulos dos campos de entrada do formulário */
+#forms label {
+    color: black; /* Cor do texto */
+    font-family: Jomhuria; /* Define a fonte */
+    margin: 6px 0px; /* Adiciona uma margem ao redor (Top, bottom | left, right) */
+}
+
+/* Estilo para os campos de entrada do formulário do tipo texto e URL */
+#forms input[type="text"],
+#forms input[type="url"]{
+    width: 90%; /* Largura do elemento */
+    padding: 10px; /* Adiciona um preenchimento ao redor do conteúdo (Top, bottom, left, right) */
+}
+
+/* Estilo para os campos de entrada do formulário do tipo data e hora */
+#forms input[type="date"],
+#forms input[type="time"] {
+    width: 40%; /* Largura do elemento */
+    padding: 12px; /* Adiciona um preenchimento ao redor do conteúdo (Top, bottom, left, right) */
+}
+
+/* Botão de envio do formulário */
+#forms button {
+    width: 50%; /* Largura do botão */
+    margin-bottom: 6px; /* Adiciona uma margem no fundo */
+    padding: 10px 10px; /* Adiciona um preenchimento ao redor do texto (Top, bottom | left, right) */
+    background-color: #090381; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 20px; /* Adiciona bordas arredondadas */
+    cursor: pointer; /* Altera o cursor para indicar que o elemento é clicável */
+}
+
+/* ---------------------------------------------------------------- */
+/* Estilo para o rodapé do site */
+
+footer {
+    display: flex; /* Exibe os elementos em linha */
+    flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha, se necessário */
+    justify-content: space-between; /* Alinha os elementos um em cada ponta */
+    background-color: #F5F5F5; /* Cor de fundo do rodapé */
+}
+
+/* Caixa do copyright do rodapé */
+#copyright {
+    margin-left: 40px; /* Adiciona uma margem à esquerda */
+    color: black; /* Cor do texto */
+    font-family: Jomhuria; /* Define a fonte */
+    font-size: 80%; /* Tamanho da fonte */
+}
+
+/* Container dos contatos do rodapé */
+#contatos {
+    display: flex; /* Exibe os elementos em linha */
+    flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha, se necessário */
+    justify-content: center; /* Distribui os elementos no centro */
+}
+
+/* Caixa do contato do rodapé */
+#contato {
+    margin-right: 40px; /* Adiciona uma margem à direita */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Título do contato */
+#titulo-contato {
+    font-family: Jomhuria; /* Define a fonte */
+    font-size: 120%; /* Tamanho da fonte */
+    color: black; /* Cor do título */
+}
+
+/* Texto do contato */
+#contato p {
+    color: black; /* Cor do texto */
+    font-size: 80%; /* Tamanho da fonte */
+}
+
+/* Caixa das redes sociais do rodapé */
+#redes-sociais {
+    margin-right: 60px; /* Adiciona uma margem à direita */
+}
+
+/* Título das redes sociais */
+#titulo-redes-sociais {
+    font-family: Jomhuria; /* Define a fonte */
+    font-size: 120%; /* Tamanho da fonte */
+    color: black; /* Cor do título */
+}
+
+/* ================================================================= */
+/* Estilo para telas menores que 600px (dispositivos móveis) */
+
+@media screen and (max-width: 600px) {
+    /* Estilo para o cabeçalho do site */
+    header {
+        flex-direction: column; /* Organiza os elementos em coluna */
+        align-items: center; /* Alinha os elementos ao centro horizontalmente */
+    }
+
+    /* Estilo para o menu de navegação do site */
+    #menu {
+        margin: 20px 0px; /* Adiciona uma margem ao redor (Top, bottom | left, right) */
+        gap: 14px; /* Reduz o espaço entre os itens */
+    }
+
+    #menu :hover {
+        transform: none; /* Remove o efeito de aumento ao passar o mouse */
+    }
+
+    /* Estilo para o título do site */
+    #titulo-site {
+        margin: 20px 0px; /* Adiciona uma margem ao redor (Top, bottom | left, right) */
+        font-size: 30px; /* Reduz o tamanho da fonte */
+    }
+
+    #container-titulo-destaque {
+        font-size: 20px; /* Reduz o tamanho da fonte */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    #container-destaques :hover {
+        transform: none; /* Remove o efeito de aumento ao passar o mouse */
+        
+    }
+
+    #eventos {
+        flex-direction: column; /* Organiza os elementos em coluna */
+        align-items: center; /* Alinha os elementos à esquerda */
+    }
+
+    #container-cards-eventos :hover {
+        transform: none; /* Remove o efeito de aumento ao passar o mouse */
+    }
+
+    #container-forms {
+        width: 400px; /* Define a largura do elemento como 60% da largura da janela de visualização */
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column; /* Organiza os elementos em coluna */
+        align-items: center; /* Alinha os elementos ao centro horizontalmente */
+    }
+
+    #contatos {
+        margin-left: 40px; /* Adiciona uma margem à esquerda */
+    }
+
+    
+}
